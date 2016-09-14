@@ -2,13 +2,13 @@
  * Created by Justin on 2016-09-13.
  */
 package ca.ualberta.cs.lonelytwitter;
-
-
+import java.util.ArrayList;
 import java.util.Date;
+
 public abstract class Tweet implements Tweetable {
     private String message;
     private Date date;
-    Integer int1;
+    private ArrayList<Mood> moods;
 
     public Tweet(String message) {
         this.message = message;
