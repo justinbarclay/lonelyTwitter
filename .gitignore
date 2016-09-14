@@ -25,7 +25,8 @@ local.properties
 proguard/
 
 *.class
-
+.idea
+gradle/
 # Package Files #
 *.jar
 *.war
