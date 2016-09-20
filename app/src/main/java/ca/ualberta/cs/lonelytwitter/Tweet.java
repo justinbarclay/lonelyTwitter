@@ -40,4 +40,9 @@ public abstract class Tweet implements Tweetable {
     public Date getDate(){
         return this.date;
     }
+
+    @Override
+    public String toString() {
+        return date.toString() + " | " + this.message;
+    }
 }
