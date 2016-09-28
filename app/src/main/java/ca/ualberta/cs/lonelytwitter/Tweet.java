@@ -20,6 +20,11 @@ public abstract class Tweet implements Tweetable {
         this.date = date;
     }
 
+    public boolean equals(Tweet otherTweet){
+        // Two tweets are equal if they have the same message;
+        return this.message.equals(otherTweet.getMessage());
+    }
+
     public abstract Boolean isImportant();
 
     public void setMessage(String message) throws TweetTooLongException {
