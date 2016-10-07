@@ -1,3 +1,12 @@
+/*
+Copyright (c) 2016 Team X, CMPUT301. University of Alberta. All rights reserved.
+You may use, distribute, and copy all or parts of this code under terms and conditions of
+University of Alberta and the Code of Student Behavior.
+You can find a copy of the lencense at http://github.com/Team20/...
+For further information, contact me at jbarclay@ualberta.ca
+ */
+
+
 package ca.ualberta.cs.lonelytwitter;
 
 import java.io.BufferedReader;
@@ -25,8 +34,34 @@ import android.widget.ListView;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
+/**
+ * This is the main view class of LonelyTwitter project. It handles all
+ * user interactions as well as file manipulations.
+ * <pre> All the files are stored in the form of "json" files stored in Emulaltor's, accessible from
+ * Android Device Monitor. </pre>
+ * <code> Pseudo code sample:
+ * open some file...
+ * attach some text...
+ * close the file.
+ * </code>
+ * <ul>
+ * <li> Some item </li>
+ * <li> Another item </li>
+ * <li> More items </li>
+ * <li> The final item </li>
+ * </ul>
+ *
+ * @author Justin
+ * @see NormalTweet
+ * @since 1.0
+ */
 public class LonelyTwitterActivity extends Activity {
 
+    /**
+     * This is the file name that is being saved / loaded and contains all the tweets
+     * @see #loadFromFile()
+     * @see #saveInFile()
+     */
     private static final String FILENAME = "file.sav";
     private EditText bodyText;
     private ListView oldTweetsList;
@@ -83,6 +118,11 @@ public class LonelyTwitterActivity extends Activity {
         oldTweetsList.setAdapter(adapter);
     }
 
+    /**
+     * This method loads the weets from FILENAME (file.sav), and ...
+     * @throws FileNotFoundException
+     * @exception RuntimeException
+     */
     private void loadFromFile() {
         try {
             FileInputStream fis = openFileInput(FILENAME);

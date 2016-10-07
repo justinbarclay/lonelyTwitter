@@ -8,13 +8,18 @@ import java.util.List;
 /**
  * Created by Justin on 2016-09-27.
  */
-
 public class TweetListTest extends ActivityInstrumentationTestCase2<LonelyTwitterActivity> {
 
+    /**
+     * Instantiates a new Tweet list test.
+     */
     public TweetListTest() {
         super(LonelyTwitterActivity.class);
     }
 
+    /**
+     * Test add tweet.
+     */
     public void testAddTweet() {
         TweetList list = new TweetList();
 
@@ -23,6 +28,9 @@ public class TweetListTest extends ActivityInstrumentationTestCase2<LonelyTwitte
         assertTrue(list.hasTweet(tweet));
     }
 
+    /**
+     * Test has tweet.
+     */
     public void testHasTweet() {
         TweetList list = new TweetList();
 
@@ -32,6 +40,9 @@ public class TweetListTest extends ActivityInstrumentationTestCase2<LonelyTwitte
         assertTrue(list.hasTweet(tweet));
     }
 
+    /**
+     * Test get tweet.
+     */
     public void testGetTweet() {
         TweetList list = new TweetList();
 
@@ -45,6 +56,9 @@ public class TweetListTest extends ActivityInstrumentationTestCase2<LonelyTwitte
         assertEquals(tweetB, list.getTweet(1));
     }
 
+    /**
+     * Test delete tweet.
+     */
     public void testDeleteTweet() {
         TweetList list = new TweetList();
 
@@ -58,6 +72,9 @@ public class TweetListTest extends ActivityInstrumentationTestCase2<LonelyTwitte
         assertFalse(list.hasTweet(tweetA));
     }
 
+    /**
+     * Test cant have duplicate tweets.
+     */
     public void testCantHaveDuplicateTweets() {
         TweetList list = new TweetList();
 
@@ -74,6 +91,9 @@ public class TweetListTest extends ActivityInstrumentationTestCase2<LonelyTwitte
         }
     }
 
+    /**
+     * Test get returns tweets in order.
+     */
     public void testGetReturnsTweetsInOrder() {
         TweetList list = new TweetList();
 
@@ -91,6 +111,9 @@ public class TweetListTest extends ActivityInstrumentationTestCase2<LonelyTwitte
         assertEquals(tweetC, tweets.get(2));
     }
 
+    /**
+     * Test get count.
+     */
     public void testGetCount() {
         TweetList list = new TweetList();
 
@@ -104,6 +127,9 @@ public class TweetListTest extends ActivityInstrumentationTestCase2<LonelyTwitte
         assertEquals(3, list.getCount());
     }
 
+    /**
+     * Test has tweets.
+     */
     public void testHasTweets() {
         TweetList list = new TweetList();
 
@@ -114,7 +140,8 @@ public class TweetListTest extends ActivityInstrumentationTestCase2<LonelyTwitte
         list.addTweet(tweetA);
         list.addTweet(tweetB);
         list.addTweet(tweetC);
-
         assertTrue(list.hasTweet());
+        list.delete(tweetC);
+        assertFalse(list.hasTweet());
     }
 }
