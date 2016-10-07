@@ -1,10 +1,12 @@
 package ca.ualberta.cs.lonelytwitter;
 
 import java.util.Date;
-
 /**
- * Created by Justin on 2016-09-13.
- */
+* This is a child class of the mood class that let's you're twitter followers know that you're in
+* a happy mood.
+* @author Justin
+* @see Mood
+*/
 public class HappyMood extends Mood {
     /**
      * Instantiates a new Happy mood.

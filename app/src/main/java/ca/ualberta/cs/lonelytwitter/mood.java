@@ -12,7 +12,7 @@ public abstract class Mood {
 
     /**
      * Instantiates a new Mood.
-     *
+     * Mood type is stored as a string.
      * @param currentMood the current mood
      */
     public Mood(String currentMood){
@@ -32,7 +32,7 @@ public abstract class Mood {
     }
 
     /**
-     * Format string.
+     * Abstract method to ensure that any mood can be printed for the user
      *
      * @return the string
      */

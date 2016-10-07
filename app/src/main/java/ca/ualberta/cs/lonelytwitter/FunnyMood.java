@@ -13,6 +13,7 @@ import java.util.Date;
  * This is a child class of the mood class that let's you're twitter followers know that you're in
  * a laughing mood.
  * @author Justin
+ * @see Mood
  */
 public class FunnyMood extends Mood {
     /**
