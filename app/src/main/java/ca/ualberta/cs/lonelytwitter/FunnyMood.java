@@ -1,9 +1,18 @@
+/*
+Copyright (c) 2016 Justin Barclay, CMPUT301. University of Alberta. All rights reserved.
+You may use, distribute, and copy all or parts of this code under terms and conditions of
+University of Alberta and the Code of Student Behavior.
+For further information, contact me at jbarclay@ualberta.ca
+ */
+
 package ca.ualberta.cs.lonelytwitter;
 
 import java.util.Date;
 
 /**
- * Created by Justin on 2016-09-13.
+ * This is a child class of the mood class that let's you're twitter followers know that you're in
+ * a laughing mood.
+ * @author Justin
  */
 public class FunnyMood extends Mood {
     /**

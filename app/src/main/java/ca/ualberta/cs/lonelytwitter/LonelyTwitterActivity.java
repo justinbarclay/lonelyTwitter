@@ -1,8 +1,7 @@
 /*
-Copyright (c) 2016 Team X, CMPUT301. University of Alberta. All rights reserved.
+Copyright (c) 2016 Justin Barclay, CMPUT301. University of Alberta. All rights reserved.
 You may use, distribute, and copy all or parts of this code under terms and conditions of
 University of Alberta and the Code of Student Behavior.
-You can find a copy of the lencense at http://github.com/Team20/...
 For further information, contact me at jbarclay@ualberta.ca
  */
 
@@ -37,20 +36,8 @@ import com.google.gson.reflect.TypeToken;
 /**
  * This is the main view class of LonelyTwitter project. It handles all
  * user interactions as well as file manipulations.
- * <pre> All the files are stored in the form of "json" files stored in Emulaltor's, accessible from
- * Android Device Monitor. </pre>
- * <code> Pseudo code sample:
- * open some file...
- * attach some text...
- * close the file.
- * </code>
- * <ul>
- * <li> Some item </li>
- * <li> Another item </li>
- * <li> More items </li>
- * <li> The final item </li>
- * </ul>
- *
+ * All the files are stored in the form of "json" files stored in Emulaltor's, accessible from
+ * Android Device Monitor.
  * @author Justin
  * @see NormalTweet
  * @since 1.0

@@ -2,7 +2,9 @@ package ca.ualberta.cs.lonelytwitter;
 import java.util.Date;
 
 /**
- * Created by Justin on 2016-09-13.
+ * Mood is the abstract base class for all mood sub types. IE Happy, Funny. It ensures that all
+ * mood tweets implement a string method, so everyone can see their mood.
+ * @author Justin
  */
 public abstract class Mood {
     private Date date;
