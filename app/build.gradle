@@ -24,4 +24,6 @@ android {
 dependencies {
     compile 'com.google.code.gson:gson:2.7'
     compile 'org.javaee:javadoc:6.0.1-b06'
+    compile 'com.jayway.android.robotium:robotium-solo:5.6.3'
+    compile 'com.android.support:appcompat-v7:18.0.0'
 }
