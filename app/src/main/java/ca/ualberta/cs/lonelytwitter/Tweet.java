@@ -9,6 +9,8 @@ package ca.ualberta.cs.lonelytwitter;
 import java.util.ArrayList;
 import java.util.Date;
 
+import io.searchbox.annotations.JestId;
+
 /**
  * This is the base model for lonelyTwitter where every action of the user has to do with viewing
  * or making tweets. It implements tweetable to ensure that the message and date are able to be
@@ -16,6 +18,17 @@ import java.util.Date;
  * @author Justin
  */
 public abstract class Tweet implements Tweetable {
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    @JestId
+    private String id;
+
     private String message;
     private Date date;
     private ArrayList<Mood> moods;
